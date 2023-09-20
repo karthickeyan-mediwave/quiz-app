@@ -1,0 +1,28 @@
+.full-container {
+  width: 400px;
+  margin: 10px auto;
+}
+.menu1 {
+  color: #006699;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.btnmenu1 {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  background-color: #006699;
+  padding: 10px;
+  border-style: solid;
+  border-color: #ffffff;
+  text-align: center;
+  width: 100px;
+  margin: 5px 0 0 50px;
+}
+select {
+  width: 200px;
+}
