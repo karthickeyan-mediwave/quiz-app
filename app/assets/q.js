@@ -1,113 +1,149 @@
-Questions = [
-  {
-    id: 1,
-    q: "Which symbol is used for comments in JavaScript? ",
-    a: [
-      { text: "slash", isCorrect: false },
-      { text: "comma", isCorrect: false },
-      { text: "Double slash", isCorrect: true },
-      { text: "single slash", isCorrect: false },
-    ],
-    category: "javascript",
-  },
-  {
-    id: 2,
-    q: "What does the ‘a’ in rgba mean?",
-    a: [
-      { text: "Anger tag", isCorrect: false },
-      { text: "Alter tag", isCorrect: false },
-      { text: "Align tag", isCorrect: false },
-      { text: "Transparency of elements", isCorrect: true },
-    ],
-    category: "css",
-  },
-  {
-    id: 3,
-    q: "What are CSS HSL Colors?",
-    a: [
-      { text: "Light color", isCorrect: false },
-      { text: "Pink color", isCorrect: false },
-      { text: "Dark color", isCorrect: false },
-      { text: "Hue, Saturation, and Lightness", isCorrect: true },
-    ],
-    category: "css",
-  },
-  {
-    id: 4,
-    q: "Which company developed JavaScript?",
-    a: [
-      { text: "Google", isCorrect: false },
-      { text: "Netscape", isCorrect: true },
-      { text: "Tandia", isCorrect: false },
-      { text: "Pulse", isCorrect: false },
-    ],
-    category: "javascript",
-  },
-  {
-    id: 5,
-    q: "What does HTML stand for?",
-    a: [
-      { text: "HyperText  Language", isCorrect: false },
-      { text: "HyperText ", isCorrect: false },
-      { text: "HyperText Markup Language", isCorrect: true },
-      { text: "Markup Language", isCorrect: false },
-    ],
-    category: "html",
-  },
-  {
-    id: 6,
-    q: "What are Attributes in HTML?",
-    a: [
-      { text: "Special tag", isCorrect: false },
-      { text: "style tag", isCorrect: false },
-      { text: "Alter the behavior of the tag.", isCorrect: true },
-    ],
-    category: "html",
-  },
-  {
-    id: 7,
-    q: "What do you mean by NULL in JavaScript?",
-    a: [
-      { text: "value ", isCorrect: false },
-      { text: "Value All", isCorrect: false },
-      { text: "No value ", isCorrect: true },
-      { text: "NaN", isCorrect: false },
-    ],
-    category: "javascript",
-  },
-  {
-    id: 8,
-    q: "What is an Anchor tag in HTML?",
-    a: [
-      { text: "Heading tag", isCorrect: false },
-      { text: "Para tag", isCorrect: false },
-      { text: "An anchor tag is used to link ", isCorrect: true },
-      { text: "Div tag", isCorrect: false },
-    ],
-    category: "html",
-  },
-  {
-    id: 9,
-    q: "What is a prompt box?",
-    a: [
-      { text: "Dialog box", isCorrect: true },
-      { text: "Special box", isCorrect: false },
-      { text: "Div box", isCorrect: false },
-      { text: "Container box", isCorrect: false },
-    ],
-    category: "javascript",
-  },
-  {
-    id: 10,
-    q: "What is CSS border?",
-    a: [
-      { text: "Allow style the border", isCorrect: true },
-      { text: "Border padding", isCorrect: false },
-      { text: "Border margin", isCorrect: false },
-    ],
-    category: "css",
-  },
-];
+// const categories = [
+//   {
+//     id: 1234,
+//     name: "Computer Science",
+//   },
+//   {
+//     id: 2345,
+//     name: "Geology",
+//   },
+// ];
+// // questions json
+// const questions = [
+//   {
+//     id: 300,
+//     title: "What color is the sky?",
+//     options: [
+//       { id: 10, text: "Blue", isCorrect: true },
+//       { id: 20, text: "Red", isCorrect: false },
+//       { id: 30, text: "Green", isCorrect: false },
+//     ],
+//     category: 2345,
+//   },
+//   {
+//     id: 301,
+//     title: "Which is a CPU company?",
+//     options: [
+//       { id: 10, text: "Intel", isCorrect: false },
+//       { id: 20, text: "AMD", isCorrect: false },
+//       { id: 30, text: "all the above", isCorrect: true },
+//     ],
+//     category: 1234,
+//   },
+// ];
+
+// const state = {
+//   categories: [
+//     {
+//       id: 1234,
+//       name: "Computer Science",
+//     },
+//     {
+//       id: 2345,
+//       name: "Geology",
+//     },
+//   ],
+//   questions: [
+//     {
+//       id: 300,
+//       title: "What color is the sky?",
+//       options: [
+//         { id: 10, text: "Blue", isCorrect: true },
+//         { id: 20, text: "Red", isCorrect: false },
+//         { id: 30, text: "Green", isCorrect: false },
+//       ],
+//       category: 2345,
+//     },
+//     {
+//       id: 301,
+//       title: "Which is a CPU company?",
+//       options: [
+//         { id: 10, text: "Intel", isCorrect: false },
+//         { id: 20, text: "AMD", isCorrect: false },
+//         { id: 30, text: "all the above", isCorrect: true },
+//       ],
+//       category: 1234,
+//     },
+//   ],
+//   page: "index",  'question'
+// };
+
+//// karthick js work out
+
+const stat = {
+  categories: [
+    {
+      id: 1234,
+      name: "html",
+    },
+    {
+      id: 2345,
+      name: "css",
+    },
+    {
+      id: 3456,
+      name: "js",
+    },
+  ],
+  questions: [
+    {
+      id: 1,
+      q: "Which symbol is used for comments in JavaScript? ",
+      a: [
+        { text: "slash", isCorrect: false },
+        { text: "comma", isCorrect: false },
+        { text: "Double slash", isCorrect: true },
+        { text: "single slash", isCorrect: false },
+      ],
+      category: "3456",
+    },
+    {
+      id: 2,
+      q: "What does the ‘a’ in rgba mean?",
+      a: [
+        { text: "Anger tag", isCorrect: false },
+        { text: "Alter tag", isCorrect: false },
+        { text: "Align tag", isCorrect: false },
+        { text: "Transparency of elements", isCorrect: true },
+      ],
+      category: "2345",
+    },
+    {
+      id: 3,
+      q: "What are CSS HSL Colors?",
+      a: [
+        { text: "Light color", isCorrect: false },
+        { text: "Pink color", isCorrect: false },
+        { text: "Dark color", isCorrect: false },
+        { text: "Hue, Saturation, and Lightness", isCorrect: true },
+      ],
+      category: "2345",
+    },
+    {
+      id: 4,
+      q: "Which company developed JavaScript?",
+      a: [
+        { text: "Google", isCorrect: false },
+        { text: "Netscape", isCorrect: true },
+        { text: "Tandia", isCorrect: false },
+        { text: "Pulse", isCorrect: false },
+      ],
+      category: "3456",
+    },
+    {
+      id: 5,
+      q: "What does HTML stand for?",
+      a: [
+        { text: "HyperText  Language", isCorrect: false },
+        { text: "HyperText ", isCorrect: false },
+        { text: "HyperText Markup Language", isCorrect: true },
+        { text: "Markup Language", isCorrect: false },
+      ],
+      category: "1234",
+    },
+  ],
+  page: "index", // 'question'
+};
 
 function loadQues(category) {
   const question = document.getElementById("ques");
@@ -193,7 +229,6 @@ submitbtn.addEventListener("click", function () {
   }
 });
 function back() {
-  localStorage.clear();
   const pageRedirect = document.querySelector("#catageory-container");
   pageRedirect.style.display = "block";
   const ques = document.querySelector("#ques");
@@ -202,6 +237,7 @@ function back() {
   back.style.display = "none";
   const checkAnswerButton = document.getElementById("btn");
   checkAnswerButton.style.display = "none";
+  window.location.reload();
 }
 
 function checkAns() {
@@ -213,9 +249,12 @@ function checkAns() {
 
   for (let x = 0; x < elements.length; x++) {
     let crtAns = document.createElement("div");
+    let userAns = document.createElement("div");
 
     crtAns.className = "ansDiv";
+    userAns.className = "userAnsDiv";
     let correctAns = "";
+    let userAnswer = "";
 
     var questNumber = elements[x].querySelector(".questNum").value;
 
@@ -244,10 +283,11 @@ function checkAns() {
   }
 }
 function saveToLocalStorage() {
-  const selectedCategory = categorySelect.value;
-  const selected = selectedCategory;
+  // const categorySelect = document.getElementById("categorySelect");
+  // const selectedCategory = categorySelect.value;
+  // const selected = selectedCategory;
 
-  let str = JSON.stringify(selected);
+  // let str = JSON.stringify(selected);
 
   localStorage.setItem("my-questions-list", str);
   console.log(str);
@@ -255,10 +295,10 @@ function saveToLocalStorage() {
 
 function getFromLocalStorage() {
   let str = localStorage.getItem("my-questions-list");
-  categorySelect.value = JSON.parse(str);
-  const submitbtn = document.querySelector("#catageory-submitBtn");
-  submitbtn.click();
-
+  // if (!str) {
+  //   Questions = [];
+  // } else {
+  //   Questions = JSON.parse(str);
   // }
 }
 getFromLocalStorage();
