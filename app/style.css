@@ -11,7 +11,7 @@ div.section {
 }
 
 .question {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
@@ -50,6 +50,7 @@ div.section {
 .submit-div,
 h1 {
   text-align: center;
+  color: dodgerblue;
 }
 #btn {
 display: none; 
@@ -59,4 +60,18 @@ background: black;
 color: white;
 font-size: 16px;
 cursor: pointer;
+float: right;
+}
+.category-div{
+  text-align: center;
+}
+#catageory-submitBtn{
+background: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    border: none;
+}
+#categorySelect{
+  color: darkblue;
 }
