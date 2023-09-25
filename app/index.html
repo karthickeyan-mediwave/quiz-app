@@ -8,14 +8,21 @@
     <title>quiz</title>
   </head>
   <body>
-    <div class="full-container">
-      <h2>select from catageries</h2>
-      <select name="menu1" id="menu1" class="menu1">
-        <option value="pages/firstpage.html">Html</option>
-        <option value="pages/secondpage.html">css</option>
-        <option value="pages/thirdpage.html">js</option>
+    <div class="panel">
+      <h1>Quiz Application</h1>
+      <div class="category-div" >
+      <label for="category"> Please Select the Category</label>
+      <select name= "category" id="categorySelect">
+        <option value= "">Select Category</option>
+        <option value= "html">Html</option>
+        <option value= "css">CSS</option>
+        <option value= "javascript">JavaScript</option>
       </select>
-      <br />
-    </div>
+      <button  id="catageory-submitBtn">Submit</button>
+    </div> 
+      <div class="question" id="ques"></div>
+  
+      <div class="submit-div"><button onclick="checkAns()" id="btn">SUBMIT</button></div>
+      <div id="score"></div>
   </body>
 </html>
