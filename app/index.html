@@ -11,20 +11,24 @@
     <div class="catageory-container" id="catageory-container">
       <h1>Quiz Application</h1>
       <div class="category-div">
-        <label for="category"> Please Select the Category</label>
+        <label for="category" class="select-label">
+          Please Select the Category</label
+        >
         <select name="category" id="categorySelect">
           <option value="">Select Category</option>
           <option value="html">Html</option>
           <option value="css">CSS</option>
           <option value="javascript">JavaScript</option>
         </select>
-        <button id="catageory-submitBtn">Submit</button>
+        <div>
+          <button id="catageory-submitBtn">Submit</button>
+        </div>
       </div>
       <div id="error-msg"><p>Select a catageory before submit</p></div>
     </div>
     <div class="question" id="ques"></div>
     <div class="submit-div" id="submit-container">
-      <button onclick="checkAns()" id="btn">SUBMIT</button>
+      <button onclick="checkAns()" id="btn" type="submit">SUBMIT</button>
       <button onclick="back()" id="BackBtn">BACK</button>
     </div>
   </body>

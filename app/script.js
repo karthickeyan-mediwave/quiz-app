@@ -1,4 +1,4 @@
-const Questions = [
+Questions = [
   {
     id: 1,
     q: "Which symbol is used for comments in JavaScript? ",
@@ -179,6 +179,7 @@ submitbtn.addEventListener("click", function () {
 
     let checkAnswerButton = document.getElementById("btn");
     checkAnswerButton.style.display = "block";
+    checkAnswerButton = true;
 
     let pageRedirect = document.querySelector("#catageory-container");
     pageRedirect.style.display = "none";
@@ -188,6 +189,7 @@ submitbtn.addEventListener("click", function () {
 
     let ques = document.querySelector("#ques");
     ques.style.display = "block";
+    saveToLocalStorage();
   }
 });
 function back() {
@@ -201,6 +203,7 @@ function back() {
   checkAnswerButton.style.display = "none";
   window.location.reload();
 }
+
 function checkAns() {
   var ansDivElements = document.querySelectorAll(".ansDiv");
   for (let i = 0; i < ansDivElements.length; i++) {
@@ -210,20 +213,24 @@ function checkAns() {
 
   for (let x = 0; x < elements.length; x++) {
     let crtAns = document.createElement("div");
+    let userAns = document.createElement("div");
 
     crtAns.className = "ansDiv";
+    userAns.className = "userAnsDiv";
     let correctAns = "";
-    let questNumber = document.querySelector(".questNum").value;
+    let userAnswer = "";
+
+    var questNumber = elements[x].querySelector(".questNum").value;
 
     let object = Questions.find((obj) => obj.id == questNumber);
-    if (document.querySelector('input[type="radio"]:checked')) {
-      let selectedAns = document.querySelector(
+    if (elements[x].querySelector('input[type="radio"]:checked')) {
+      var selectedAns = elements[x].querySelector(
         'input[type="radio"]:checked'
       ).value;
       let isCorrectAns = false;
       for (let y = 0; y < object.a.length; y++) {
         if (object.a[y].isCorrect) {
-          correctAns = "<p>Correct Answer: <b>" + object.a[y].text + "</b></p>";
+          correctAns = "<p> Answer: <b>" + object.a[y].text + "</b></p>";
         }
         if (object.a[y].isCorrect && object.a[y].text == selectedAns) {
           isCorrectAns = true;
@@ -239,3 +246,22 @@ function checkAns() {
     }
   }
 }
+function saveToLocalStorage() {
+  // const categorySelect = document.getElementById("categorySelect");
+  const selectedCategory = categorySelect.value;
+  const selected = selectedCategory;
+  let str = JSON.stringify(selected);
+
+  localStorage.setItem("my-questions-list", str);
+  console.log(str);
+}
+
+function getFromLocalStorage() {
+  let str = localStorage.getItem("my-questions-list");
+  // if (!str) {
+  //   Questions = [];
+  // } else {
+  //   Questions = JSON.parse(str);
+  // }
+}
+getFromLocalStorage();

@@ -9,18 +9,20 @@ div.section {
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 10px;
+  background-color: aliceblue;
 }
 
 .question {
   font-size: 28px;
   margin-bottom: 20px;
   margin-top: 100px;
-  padding: 10px;
+  padding: 40px;
+  border-radius: 20px;
 }
 
-.panel {
+.catageory-container {
   width: 50%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .section.correct {
@@ -72,12 +74,19 @@ h1 {
 #catageory-submitBtn {
   background: black;
   color: white;
-  padding: 4px 10px;
+  padding: 8px 10px;
   border-radius: 4px;
   border: none;
+  margin-top: 25px;
+  width: 100px;
+  font-size: 16px;
 }
 #categorySelect {
-  color: darkblue;
+  color: white;
+  background: darkblue;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 18px;
 }
 #BackBtn {
   display: none;
@@ -90,12 +99,14 @@ h1 {
   float: right;
   border-radius: 5px;
 }
-b {
-  color: green;
-}
+
 #error-msg {
   color: red;
   text-align: center;
   display: none;
   font-size: 30px;
+}
+.select-label {
+  color: blueviolet;
+  font-family: sans-serif;
 }
