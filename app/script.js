@@ -177,16 +177,16 @@ submitbtn.addEventListener("click", function () {
   } else {
     loadQues(selectedCategory);
 
-    const checkAnswerButton = document.getElementById("btn");
+    let checkAnswerButton = document.getElementById("btn");
     checkAnswerButton.style.display = "block";
 
-    const pageRedirect = document.querySelector("#catageory-container");
+    let pageRedirect = document.querySelector("#catageory-container");
     pageRedirect.style.display = "none";
 
-    const back = document.querySelector("#BackBtn");
+    let back = document.querySelector("#BackBtn");
     back.style.display = "block";
 
-    const ques = document.querySelector("#ques");
+    let ques = document.querySelector("#ques");
     ques.style.display = "block";
   }
 });
@@ -199,6 +199,7 @@ function back() {
   back.style.display = "none";
   const checkAnswerButton = document.getElementById("btn");
   checkAnswerButton.style.display = "none";
+  window.location.reload();
 }
 function checkAns() {
   var ansDivElements = document.querySelectorAll(".ansDiv");
