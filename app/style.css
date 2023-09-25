@@ -93,3 +93,9 @@ h1 {
 b {
   color: green;
 }
+#error-msg {
+  color: red;
+  text-align: center;
+  display: none;
+  font-size: 30px;
+}

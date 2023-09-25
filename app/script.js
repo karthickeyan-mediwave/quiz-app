@@ -171,6 +171,8 @@ submitbtn.addEventListener("click", function () {
   const categorySelect = document.getElementById("categorySelect");
   const selectedCategory = categorySelect.value;
   if (selectedCategory == "") {
+    const error = document.getElementById("error-msg");
+    error.style.display = "block";
     return false;
   } else {
     loadQues(selectedCategory);
