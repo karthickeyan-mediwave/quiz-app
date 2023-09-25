@@ -170,17 +170,23 @@ const submitbtn = document.querySelector("#catageory-submitBtn");
 submitbtn.addEventListener("click", function () {
   const categorySelect = document.getElementById("categorySelect");
   const selectedCategory = categorySelect.value;
+  if (selectedCategory == "") {
+    return false;
+  } else {
+    loadQues(selectedCategory);
 
-  loadQues(selectedCategory);
+    const checkAnswerButton = document.getElementById("btn");
+    checkAnswerButton.style.display = "block";
 
-  const checkAnswerButton = document.getElementById("btn");
-  checkAnswerButton.style.display = "block";
+    const pageRedirect = document.querySelector("#catageory-container");
+    pageRedirect.style.display = "none";
 
-  const pageRedirect = document.querySelector("#catageory-container");
-  pageRedirect.style.display = "none";
+    const back = document.querySelector("#BackBtn");
+    back.style.display = "block";
 
-  const back = document.querySelector("#BackBtn");
-  back.style.display = "block";
+    const ques = document.querySelector("#ques");
+    ques.style.display = "block";
+  }
 });
 function back() {
   const pageRedirect = document.querySelector("#catageory-container");
@@ -204,15 +210,13 @@ function checkAns() {
 
     crtAns.className = "ansDiv";
     let correctAns = "";
-    let questNumber = elements[x].querySelector(".questNum").value;
+    let questNumber = document.querySelector(".questNum").value;
 
     let object = Questions.find((obj) => obj.id == questNumber);
-    if (elements[x].querySelector('input[type="radio"]:checked')) {
-      let selectedAns = elements[x].querySelector(
+    if (document.querySelector('input[type="radio"]:checked')) {
+      let selectedAns = document.querySelector(
         'input[type="radio"]:checked'
       ).value;
-      elements[x].parentElement.classList.remove("correct");
-      elements[x].parentElement.classList.remove("wrong");
       let isCorrectAns = false;
       for (let y = 0; y < object.a.length; y++) {
         if (object.a[y].isCorrect) {
