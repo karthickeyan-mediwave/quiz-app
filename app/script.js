@@ -175,8 +175,23 @@ submitbtn.addEventListener("click", function () {
 
   const checkAnswerButton = document.getElementById("btn");
   checkAnswerButton.style.display = "block";
-});
 
+  const pageRedirect = document.querySelector("#catageory-container");
+  pageRedirect.style.display = "none";
+
+  const back = document.querySelector("#BackBtn");
+  back.style.display = "block";
+});
+function back() {
+  const pageRedirect = document.querySelector("#catageory-container");
+  pageRedirect.style.display = "block";
+  const ques = document.querySelector("#ques");
+  ques.style.display = "none";
+  const back = document.querySelector("#BackBtn");
+  back.style.display = "none";
+  const checkAnswerButton = document.getElementById("btn");
+  checkAnswerButton.style.display = "none";
+}
 function checkAns() {
   var ansDivElements = document.querySelectorAll(".ansDiv");
   for (let i = 0; i < ansDivElements.length; i++) {
