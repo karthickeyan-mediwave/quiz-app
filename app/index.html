@@ -10,19 +10,20 @@
   <body>
     <div class="panel">
       <h1>Quiz Application</h1>
-      <div class="category-div" >
-      <label for="category"> Please Select the Category</label>
-      <select name= "category" id="categorySelect">
-        <option value= "">Select Category</option>
-        <option value= "html">Html</option>
-        <option value= "css">CSS</option>
-        <option value= "javascript">JavaScript</option>
-      </select>
-      <button  id="catageory-submitBtn">Submit</button>
-    </div> 
-      <div class="question" id="ques"></div>
-  
-      <div class="submit-div"><button onclick="checkAns()" id="btn">SUBMIT</button></div>
-      <div id="score"></div>
+      <div class="category-div">
+        <label for="category"> Please Select the Category</label>
+        <select name="category" id="categorySelect">
+          <option value="">Select Category</option>
+          <option value="html">Html</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+        <button id="catageory-submitBtn">Submit</button>
+      </div>
+    </div>
+    <div class="question" id="ques"></div>
+    <div class="submit-div">
+      <button onclick="checkAns()" id="btn">SUBMIT</button>
+    </div>
   </body>
 </html>

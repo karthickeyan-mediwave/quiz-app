@@ -1,220 +1,216 @@
-const Questions = [{
-  id: 1,
-  q: "What is capital of India?",
-  a: [{ text: "Gandhinagar", isCorrect: false },
-  { text: "Surat", isCorrect: false },
-  { text: "Delhi", isCorrect: true },
-  { text: "Mumbai", isCorrect: false }
-  ],
-  category: "javascript"
-
-},
-{
-  id: 2,
-  q: "What is the largest river in the world?",
-  a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-  { text: "Phuket", isCorrect: false },
-  { text: "Ayutthaya", isCorrect: false },
-  { text: "Amazon River", isCorrect: true }
-  ],
-  category: "css"
-
-},
-{
-  id: 3,
-  q: "What is the capital of Thailand?",
-  a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-  { text: "Phuket", isCorrect: false },
-  { text: "Ayutthaya", isCorrect: false },
-  { text: "Bangkok", isCorrect: true }
-  ],
-  category: "css"
-
-},
-{
-  id: 4,
-  q: "Which is the largest state of India?",
-  a: [{ text: "Gujarat", isCorrect: false, isSelected: false },
-  { text: "Rajasthan", isCorrect: true },
-  { text: "Tamil Nadu", isCorrect: false },
-  { text: "Puducherry", isCorrect: false }
-  ],
-  category: "javascript"
-
-},
-{
-  id: 5,
-  q: "Which is the hardest substance available on earth?",
-  a: [{ text: "Platinum", isCorrect: false, isSelected: false },
-  { text: "Silver", isCorrect: false },
-  { text: "Diamond", isCorrect: true },
-  { text: "Gold", isCorrect: false }
-  ],
-  category: "html"
-
-},
-{
-  id: 6,
-  q: "What is the world’s largest ocean?",
-  a: [{ text: "Arctic Ocean", isCorrect: false, isSelected: false },
-  { text: "Indian Ocean", isCorrect: false },
-  { text: "Pacific Ocean", isCorrect: true }
-  ],
-  category: "html"
-
-},
-{
-  id: 7,
-  q: "Name the largest planet of our Solar System?",
-  a: [{ text: "Earth", isCorrect: false, isSelected: false },
-  { text: "Venus", isCorrect: false },
-  { text: "Jupiter", isCorrect: true },
-  { text: "Neptune", isCorrect: false }
-  ],
-  category: "javascript"
-
-},
-{
-  id: 8,
-  q: "Which was the first country to use paper money?",
-  a: [{ text: "Japan", isCorrect: false, isSelected: false },
-  { text: "America", isCorrect: false },
-  { text: "China", isCorrect: true },
-  { text: "India", isCorrect: false }
-  ],
-  category: "html"
-
-},
-{
-  id: 9,
-  q: "Which is the largest animal in the world?",
-  a: [{ text: "Blue whale", isCorrect: true, isSelected: false },
-  { text: "Elephant", isCorrect: false }
-  ],
-  category: "javascript"
-},
-{
-  id: 10,
-  q: "Which is the largest ‘Democracy’ country in the world?",
-  a: [{ text: "India", isCorrect: true },
-  { text: "America", isCorrect: false },
-  { text: "China", isCorrect: false }
-  ],
-  category: "css"
-
-}];
-
-
+const Questions = [
+  {
+    id: 1,
+    q: "Which symbol is used for comments in JavaScript? ",
+    a: [
+      { text: "slash", isCorrect: false },
+      { text: "comma", isCorrect: false },
+      { text: "Double slash", isCorrect: true },
+      { text: "single slash", isCorrect: false },
+    ],
+    category: "javascript",
+  },
+  {
+    id: 2,
+    q: "What does the ‘a’ in rgba mean?",
+    a: [
+      { text: "Anger tag", isCorrect: false },
+      { text: "Alter tag", isCorrect: false },
+      { text: "Align tag", isCorrect: false },
+      { text: "Transparency of elements", isCorrect: true },
+    ],
+    category: "css",
+  },
+  {
+    id: 3,
+    q: "What are CSS HSL Colors?",
+    a: [
+      { text: "Light color", isCorrect: false },
+      { text: "Pink color", isCorrect: false },
+      { text: "Dark color", isCorrect: false },
+      { text: "Hue, Saturation, and Lightness", isCorrect: true },
+    ],
+    category: "css",
+  },
+  {
+    id: 4,
+    q: "Which company developed JavaScript?",
+    a: [
+      { text: "Google", isCorrect: false },
+      { text: "Netscape", isCorrect: true },
+      { text: "Tandia", isCorrect: false },
+      { text: "Pulse", isCorrect: false },
+    ],
+    category: "javascript",
+  },
+  {
+    id: 5,
+    q: "What does HTML stand for?",
+    a: [
+      { text: "HyperText  Language", isCorrect: false },
+      { text: "HyperText ", isCorrect: false },
+      { text: "HyperText Markup Language", isCorrect: true },
+      { text: "Markup Language", isCorrect: false },
+    ],
+    category: "html",
+  },
+  {
+    id: 6,
+    q: "What are Attributes in HTML?",
+    a: [
+      { text: "Special tag", isCorrect: false },
+      { text: "style tag", isCorrect: false },
+      { text: "Alter the behavior of the tag.", isCorrect: true },
+    ],
+    category: "html",
+  },
+  {
+    id: 7,
+    q: "What do you mean by NULL in JavaScript?",
+    a: [
+      { text: "value ", isCorrect: false },
+      { text: "Value All", isCorrect: false },
+      { text: "No value ", isCorrect: true },
+      { text: "NaN", isCorrect: false },
+    ],
+    category: "javascript",
+  },
+  {
+    id: 8,
+    q: "What is an Anchor tag in HTML?",
+    a: [
+      { text: "Heading tag", isCorrect: false },
+      { text: "Para tag", isCorrect: false },
+      { text: "An anchor tag is used to link ", isCorrect: true },
+      { text: "Div tag", isCorrect: false },
+    ],
+    category: "html",
+  },
+  {
+    id: 9,
+    q: "What is a prompt box?",
+    a: [
+      { text: "Dialog box", isCorrect: true },
+      { text: "Special box", isCorrect: false },
+      { text: "Div box", isCorrect: false },
+      { text: "Container box", isCorrect: false },
+    ],
+    category: "javascript",
+  },
+  {
+    id: 10,
+    q: "What is CSS border?",
+    a: [
+      { text: "Allow style the border", isCorrect: true },
+      { text: "Border padding", isCorrect: false },
+      { text: "Border margin", isCorrect: false },
+    ],
+    category: "css",
+  },
+];
 
 function loadQues(category) {
-
-  const question = document.getElementById("ques")
+  const question = document.getElementById("ques");
   question.innerHTML = "";
-  const opt = document.getElementById("opt")
-  
+  const opt = document.getElementById("opt");
 
-
-  var id = 1;
+  let id = 1;
   for (let z = 0; z < Questions.length; z++) {
-    
-      if(category == Questions[z].category){
-      
-      var fullDiv = document.createElement("div");
-      var quesDiv = document.createElement("div");
-      var optDiv = document.createElement("div");
-      var idHidden = document.createElement("input");
+    if (category == Questions[z].category) {
+      let fullDiv = document.createElement("div");
+      let quesDiv = document.createElement("div");
+      let optDiv = document.createElement("div");
+      let idHidden = document.createElement("input");
 
       idHidden.type = "hidden";
       idHidden.value = Questions[z].id;
       idHidden.className = "questNum";
       idHidden.name = "questNum";
-      quesDiv.id = 'ques' + z;
-      optDiv.id = 'opt' + z;
-      fullDiv.id = 'mydiv' + z;
+      quesDiv.id = "ques" + z;
+      optDiv.id = "opt" + z;
+      fullDiv.id = "mydiv" + z;
 
-      quesDiv.className = 'questionDiv';
-      optDiv.className = 'optionDiv';
-      fullDiv.className = 'section';
+      quesDiv.className = "questionDiv";
+      optDiv.className = "optionDiv";
+      fullDiv.className = "section";
 
-      quesDiv.textContent = id + '. ' + Questions[z].q;
-
+      quesDiv.textContent = id + ". " + Questions[z].q;
 
       for (let i = 0; i < Questions[z].a.length; i++) {
-        var op = document.createElement("div");
-        op.className = 'opt ' + i;
+        let op = document.createElement("div");
+        op.className = "opt " + i;
 
         const choicesdiv = document.createElement("div");
         const choice = document.createElement("input");
         const choiceLabel = document.createElement("label");
-        
 
         choice.type = "radio";
         choice.name = "answer" + z;
-        
+
         choice.value = Questions[z].a[i].text;
 
         choiceLabel.textContent = Questions[z].a[i].text;
 
         op.appendChild(choice);
         op.appendChild(choiceLabel);
-        optDiv.appendChild(op)
-
+        optDiv.appendChild(op);
       }
-      optDiv.appendChild(idHidden)
+      optDiv.appendChild(idHidden);
       fullDiv.appendChild(quesDiv);
       fullDiv.appendChild(optDiv);
       question.appendChild(fullDiv);
       id++;
     }
-
   }
-
 }
 
 loadQues();
-const submitbtn = document.querySelector('#catageory-submitBtn')
-submitbtn.addEventListener('click', function () {
-const categorySelect = document.getElementById("categorySelect");
-const selectedCategory = categorySelect.value;
 
-loadQues(selectedCategory);
+const submitbtn = document.querySelector("#catageory-submitBtn");
+submitbtn.addEventListener("click", function () {
+  const categorySelect = document.getElementById("categorySelect");
+  const selectedCategory = categorySelect.value;
 
-const checkAnswerButton = document.getElementById("btn");
+  loadQues(selectedCategory);
+
+  const checkAnswerButton = document.getElementById("btn");
   checkAnswerButton.style.display = "block";
 });
 
 function checkAns() {
   var ansDivElements = document.querySelectorAll(".ansDiv");
-for (var i = 0; i < ansDivElements.length; i++) {
-ansDivElements[i].remove();
-}
-  var elements = document.getElementsByClassName("optionDiv");
+  for (let i = 0; i < ansDivElements.length; i++) {
+    ansDivElements[i].remove();
+  }
+  let elements = document.getElementsByClassName("optionDiv");
 
-  for (var x = 0; x < elements.length; x++) {
-    var crtAns = document.createElement("div");
-    
-    crtAns.className = 'ansDiv';
-    var correctAns = '';
-    var questNumber = elements[x].querySelector('.questNum').value;
+  for (let x = 0; x < elements.length; x++) {
+    let crtAns = document.createElement("div");
 
-    var object = Questions.find(obj => obj.id == questNumber);
-    if(elements[x].querySelector('input[type="radio"]:checked')){
-      var selectedAns = elements[x].querySelector('input[type="radio"]:checked').value;
-      elements[x].parentElement.classList.remove('correct');
-      elements[x].parentElement.classList.remove('wrong');
-      var isCorrectAns = false;
-      for(let y=0; y < object.a.length; y++){
-        if(object.a[y].isCorrect ){
-          correctAns = '<p>Answer: <b>' + object.a[y].text + '</b></p>';
+    crtAns.className = "ansDiv";
+    let correctAns = "";
+    let questNumber = elements[x].querySelector(".questNum").value;
+
+    let object = Questions.find((obj) => obj.id == questNumber);
+    if (elements[x].querySelector('input[type="radio"]:checked')) {
+      let selectedAns = elements[x].querySelector(
+        'input[type="radio"]:checked'
+      ).value;
+      elements[x].parentElement.classList.remove("correct");
+      elements[x].parentElement.classList.remove("wrong");
+      let isCorrectAns = false;
+      for (let y = 0; y < object.a.length; y++) {
+        if (object.a[y].isCorrect) {
+          correctAns = "<p>Correct Answer: <b>" + object.a[y].text + "</b></p>";
         }
-        if(object.a[y].isCorrect && object.a[y].text == selectedAns){
+        if (object.a[y].isCorrect && object.a[y].text == selectedAns) {
           isCorrectAns = true;
         }
       }
-      if(isCorrectAns){
-        elements[x].parentElement.classList.add('correct');
-      }else{
-        elements[x].parentElement.classList.add('wrong');
+      if (isCorrectAns) {
+        elements[x].parentElement.classList.add("correct");
+      } else {
+        elements[x].parentElement.classList.add("wrong");
       }
       crtAns.innerHTML = correctAns;
       elements[x].parentElement.appendChild(crtAns);

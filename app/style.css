@@ -8,6 +8,7 @@ div.section {
   margin: 10px 0px;
   padding: 10px;
   border: 2px solid #ddd;
+  border-radius: 10px;
 }
 
 .question {
@@ -53,25 +54,26 @@ h1 {
   color: dodgerblue;
 }
 #btn {
-display: none; 
-border: 1px solid;
-padding: 10px;
-background: black;
-color: white;
-font-size: 16px;
-cursor: pointer;
-float: right;
+  display: none;
+  border: 1px solid;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  border-radius: 5px;
 }
-.category-div{
+.category-div {
   text-align: center;
 }
-#catageory-submitBtn{
-background: black;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 4px;
-    border: none;
+#catageory-submitBtn {
+  background: black;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
 }
-#categorySelect{
+#categorySelect {
   color: darkblue;
 }
