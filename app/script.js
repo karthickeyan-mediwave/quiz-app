@@ -202,6 +202,8 @@ function back() {
   back.style.display = "none";
   const checkAnswerButton = document.getElementById("btn");
   checkAnswerButton.style.display = "none";
+  const error = document.getElementById("error-msg");
+  error.style.display = "none";
 }
 
 function checkAns() {
@@ -258,7 +260,10 @@ function getFromLocalStorage() {
   categorySelect.value = JSON.parse(str);
   const submitbtn = document.querySelector("#catageory-submitBtn");
   submitbtn.click();
-
-  // }
+  const error = document.getElementById("error-msg");
+  error.style.display = "none";
+  const categorySelect = document.getElementById("categorySelect");
+  const selectedCategory = categorySelect.value;
+  selectedCategory == "";
 }
 getFromLocalStorage();

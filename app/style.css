@@ -101,9 +101,9 @@ h1 {
 }
 
 #error-msg {
+  display: none;
   color: red;
   text-align: center;
-  display: none;
   font-size: 30px;
 }
 .select-label {
